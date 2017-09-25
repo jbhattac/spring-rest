@@ -35,9 +35,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="
-        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans 
         http://www.springframework.org/schema/util 
-        http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/util/spring-util.xsd 
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
         <property name="cacheConfiguration">

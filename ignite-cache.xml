@@ -33,11 +33,8 @@
 -->
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="
-        http://www.springframework.org/schema/beans 
-        http://www.springframework.org/schema/util 
-        http://www.springframework.org/schema/util/spring-util.xsd 
+        http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
         <property name="cacheConfiguration">
@@ -50,10 +47,7 @@
                 </bean>
             </list>
         </property>
-	<!-- Enable cache events. -->
-	<property name="includeEventTypes">
-		<util:constant static-field="org.apache.ignite.events.EventType.EVTS_CACHE"/>
-	 </property>
+
         <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
         <property name="discoverySpi">
             <bean class="org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi">
